@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+   
+    <link rel = "stylesheet" href = "BSK.css">
+    <link rel = "stylesheet" href = "Login.css">
+    </ul>
+    </div>
+
+    <!-- Tab icon and title -->
+
+    <title>Borås-Fristad Schackklubb</title>
+    <link rel="icon" type="image/x-icon" href="bsk_icon.ico">
+    </head>
+    <body>
+
+      <div class="header">
+        <h1>Borås-Fristad Schackklubb</h1>
+        
+        
+      </div>
+
+      <button onclick="document.getElementById('id01').style.display='block'">Logga In</button>
+
+<!-- Log in knapp + popup -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Loginknapp -->
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label for="anamn"><b>Användarnamn</b></label>
+      <input type="text" placeholder="Skriv in Användarnamn" name="anamn" required>
+
+      <label for="lös"><b>Lösenord</b></label>
+      <input type="password" placeholder="Skriv in Lösenord" name="lös" required>
+
+      <button type="submit">Logga In</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
+      <span class="lös "><a href="#"> Glömt lösenord?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+ 
+ 
+  // Stäng ner pop up oavsett vart man klickar
+  var modal = document.getElementById('id01');
+  
+ 
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+      <!-- Kolumn med vad man kan göra på sidan -->
+      
+      <div class="row">
+        <div class="col-3 col-s-3 menu">
+          <ul> 
+            
+            
+            <div class="btn-group">
+              <button class="btn-group" role="button" onclick="document.location='anslag.html'">Anslag</button>
+              <button class="btn-group" role="button" onclick="document.location='resultat.html'">Resultat</button>
+              <button class="btn-group" role="button" onclick="document.location='bilder.html'">Bilder</button>
+              <button class="btn-group" role="button" onclick="document.location='kalender.html'">Kalender</button>
+              <button class="btn-group" role="button" onclick="document.location='rating.html'">Rating</button>
+              <button class="btn-group" role="button" onclick="document.location='styrelsen.html'">Styrelsen</button>
+              <button class="btn-group" role="button" onclick="document.location='medlemskap.html'">Medlemskap</button>
+            </div>
+
+          </ul>
+        </div>
+      
+        <div class="col-6 col-s-9">
+          <h3>Välkommen till vårens schackverksamhet!</h3>
+
+        </div>
+
+        <!-- Höger sida Information -->
+      
+        <div class="col-3 col-s-12">
+          <div class="news">
+            <h2>Vart?</h2>
+            <p>"Framtid Sjöbo", på Sjöbo Torg</p>
+            <h2>När?</h2>
+            <p>Torsdagar kl. 18:30</p>
+      
+              <div class="container">
+                <div class="image">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Nyhetsbrevsprenumeration -->
+
+        
+        <div class="news">
+          
+              <div class="container">
+                <div class="image">
+                </div>
+                <h1>Prenumerera</h1>
+                <p>Prenumerera till vårt nyhetsbrev och håll dig uppdaterad.</p>
+              </div>
+              <div class="form-input">
+                <label for="email"></label>
+                <input type="email" placeholder="Din Mail">
+                <button class="subscribe-btn">Prenumerera</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Footer-->
+      
+      <body class="Frame">
+      <div class="footer">
+        <p>© 2022 Borassk.n.nu. Alla rättigheter förbehållna.</p>
+      </div>
+    </body>
+      
+      </body>
+      </html>
+      
+      
+
+
+   
+    
+  </body>
+</html>
